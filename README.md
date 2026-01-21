@@ -4,7 +4,7 @@ Code for Prediction of Cancer Drug Response Based on Hypergraph Convolutional Ne
 
 ## Model Architecture
 
-![Overview of the HypergraphCDR architecture](./architecture.png)
+![Overview of the HypergraphCDR architecture](./architecture.pdf)
 
 ---
 ## 1. Clone the Repository
