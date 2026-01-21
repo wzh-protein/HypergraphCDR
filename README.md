@@ -65,5 +65,5 @@ python run_AE.py
 
 Then, train the main HypergraphCDR model:
 ```bash
-python rub_main.py
+python run_main.py
 ```
