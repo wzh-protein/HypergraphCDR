@@ -26,4 +26,31 @@ conda activate hypergraphcdr
 ```bash
 #The experimental dataset can be downloaded from Zenodo:https://zenodo.org/records/18321386
 ```
+After downloading, extract the dataset files into the `./` directory.
 
+## 4.Preprocessing
+First, create a directory to store intermediate and final results:
+
+```bash
+mkdir result
+```
+
+Then, run the preprocessing scripts in the following order:
+
+Process IC50 drug response data:
+
+```bash
+python ./process/ic50.py
+```
+
+Process drug features:
+
+```bash
+python ./process/drug.py
+```
+
+Process cell features:
+
+```bash
+python ./process/cell.py
+```
