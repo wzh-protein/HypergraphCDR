@@ -37,20 +37,33 @@ mkdir result
 
 Then, run the preprocessing scripts in the following order:
 
-Process IC50 drug response data:
+Process IC50 drug response data
 
 ```bash
 python ./process/ic50.py
 ```
 
-Process drug features:
+Process drug features
 
 ```bash
 python ./process/drug.py
 ```
 
-Process cell features:
+Process cell features
 
 ```bash
 python ./process/cell.py
+```
+
+
+## 5.Training
+
+First, train the autoencoder for feature compression:
+```bash
+python run_AE.py
+```
+
+Then, train the main HypergraphCDR model:
+```bash
+python rub_main.py
 ```
