@@ -1,4 +1,4 @@
-name: hygra
+name: hypergraphcdr
 channels:
   - pytorch
   - nvidia
