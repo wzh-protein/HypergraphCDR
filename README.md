@@ -27,8 +27,10 @@ conda activate hypergraphcdr
 ```
 
 ## 3. Dataset Preparation
+
+The experimental dataset can be downloaded from Zenodo:
 ```bash
-#The experimental dataset can be downloaded from Zenodo:https://zenodo.org/records/18321386
+https://zenodo.org/records/18321386
 ```
 After downloading, extract the dataset files into the `./` directory.
 
