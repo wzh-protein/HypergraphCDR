@@ -10,8 +10,8 @@ Code for Prediction of Cancer Drug Response Based on Hypergraph Convolutional Ne
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/wzh-protein/HypergraphCDR
-cd HypergraphCDR
+$ git clone https://github.com/wzh-protein/HypergraphCDR
+$ cd HypergraphCDR
 
 ```
 
@@ -22,8 +22,8 @@ We recommend using **conda** to create the runtime environment.
 Create the environment using the provided `environment.yml` file:
 
 ```bash
-conda env create -f environment.yml
-conda activate hypergraphcdr
+$ conda env create -f environment.yml
+$ conda activate hypergraphcdr
 ```
 
 ## 3. Dataset Preparation
@@ -35,41 +35,41 @@ https://zenodo.org/records/18321386
 After downloading, extract the dataset files into the `./` directory.
 
 ## 4. Preprocessing
-First, create a directory to store intermediate and final results:
+### 4.A create a directory to store intermediate and final results:
 
 ```bash
-mkdir result
+$ mkdir result
 ```
 
-Then, run the preprocessing scripts in the following order:
+### 4.B Run the preprocessing scripts in the following order:
 
-Process IC50 drug response data
+- Process IC50 drug response data
 
 ```bash
-python ./process/ic50.py
+$ python ./process/ic50.py
 ```
 
-Process drug features
+- Process drug features
 
 ```bash
-python ./process/drug.py
+$ python ./process/drug.py
 ```
 
-Process cell features
+- Process cell features
 
 ```bash
-python ./process/cell.py
+$ python ./process/cell.py
 ```
 
 
 ## 5. Training
 
-First, train the autoencoder for feature compression:
+### 5.A Train the autoencoder for feature compression:
 ```bash
-python run_AE.py
+$ python run_AE.py
 ```
 
-Then, train the main HypergraphCDR model:
+### 5.B Train the main HypergraphCDR model:
 ```bash
-python run_main.py
+$ python run_main.py
 ```
