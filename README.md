@@ -3,7 +3,7 @@
 Code for Prediction of Cancer Drug Response Based on Hypergraph Convolutional Network and Contrastive Learning.
 
 ---
-## 1.Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/wzh-protein/HypergraphCDR.git
@@ -11,7 +11,7 @@ cd HypergraphCDR
 
 ```
 
-## 2.Environment Setup
+## 2. Environment Setup
 
 We recommend using **conda** to create the runtime environment.
 
@@ -22,13 +22,13 @@ conda env create -f environment.yml
 conda activate hypergraphcdr
 ```
 
-## 3.Dataset Preparation
+## 3. Dataset Preparation
 ```bash
 #The experimental dataset can be downloaded from Zenodo:https://zenodo.org/records/18321386
 ```
 After downloading, extract the dataset files into the `./` directory.
 
-## 4.Preprocessing
+## 4. Preprocessing
 First, create a directory to store intermediate and final results:
 
 ```bash
@@ -56,7 +56,7 @@ python ./process/cell.py
 ```
 
 
-## 5.Training
+## 5. Training
 
 First, train the autoencoder for feature compression:
 ```bash
