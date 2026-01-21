@@ -10,7 +10,7 @@ Code for Prediction of Cancer Drug Response Based on Hypergraph Convolutional Ne
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/wzh-protein/HypergraphCDR.git
+git clone https://github.com/wzh-protein/HypergraphCDR
 cd HypergraphCDR
 
 ```
