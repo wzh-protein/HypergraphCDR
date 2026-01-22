@@ -35,13 +35,13 @@ https://zenodo.org/records/18321386
 After downloading, extract the dataset files into the `./` directory.
 
 ## 4. Preprocessing
-### 4.A create a directory to store intermediate and final results:
+### ① create a directory to store intermediate and final results:
 
 ```bash
 $ mkdir result
 ```
 
-### 4.B Run the preprocessing scripts in the following order:
+### ② Run the preprocessing scripts in the following order:
 
 - Process IC50 drug response data
 
@@ -64,12 +64,12 @@ $ python ./process/cell.py
 
 ## 5. Training
 
-### 5.A Train the autoencoder for feature compression:
+### ① Train the autoencoder for feature compression:
 ```bash
 $ python run_AE.py
 ```
 
-### 5.B Train the main HypergraphCDR model:
+### ② Train the main HypergraphCDR model:
 ```bash
 $ python run_main.py
 ```
